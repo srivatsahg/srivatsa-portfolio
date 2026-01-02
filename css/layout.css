@@ -85,7 +85,7 @@
 .content {
   max-width: 720px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
   min-height: calc(100vh - 200px);
 }
 
