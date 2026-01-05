@@ -38,6 +38,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
     padding: 2rem;
     position: fixed;
     width: 100%;
@@ -46,10 +47,25 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.logo {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.logo:hover {
+    color: var(--accent);
+}
+
 .nav-links {
     display: flex;
     list-style: none;
     gap: 2rem;
+    flex: 1;
 }
 
 .nav-links a {
@@ -64,10 +80,33 @@ body {
     color: var(--accent);
 }
 
+/* Resume Button */
+.navbar .resume-button {
+    padding: 0.6rem 1.2rem;
+    background: var(--accent);
+    color: var(--bg-color);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: var(--transition);
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+}
+
+.navbar .resume-button:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--accent-glow);
+}
+
 /* Theme Controls */
 .theme-switch {
     display: flex;
     gap: 0.5rem;
+    margin-left: auto;
 }
 
 .theme-btn {
